@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Shivakshi Singh</title>
+        <link rel="stylesheet" href="style3.css">
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        
+    </head>
+    <body>
+        <div class="sidebar ">
+            <div class="logo-details">
+                <a href="#">
+                    <i class='bx bx-face'></i>
+                </a>
+                <span class="logo-txt">Shivakshi</span>
+            </div>
+
+            <ul class="navlinks">
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-grid-alt'></i>
+                        <span class="txt1">Dashboard</span>
+                    </a>
+                   
+                </li>
+                <li>
+                    <div class="iocn-link">
+                        <a href="#">
+                            <i class='bx bxs-collection'></i>
+                            <span class="txt1">Categories</span>
+                        </a>
+                        <a href="#" id="down">
+                            <i class='bx bx-chevrons-down'></i>
+                        </a>
+                          
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a href="#">HTML and CSS</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                        <li><a href="#">PHP</a></li>
+                    </ul>
+                   
+                </li>
+                <li>
+                    <div class="iocn-link">
+                        <a href="#">
+                            <i class='bx bx-book'></i>
+                            <span class="txt1">Posts</span>
+                        </a>
+                        <a href="#" id="down">
+                            <i class='bx bx-chevrons-down'></i>
+                        </a>
+                    
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Login Form</a></li>
+                        <li><a href="#">Card Design</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-pie-chart-alt-2'></i>
+                        <span class="txt1">Analytics</span>
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-plug' ></i>
+                        <span class="txt1">Plug</span>
+                    </a>
+                   
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-compass'></i>
+                        <span class="txt1">Explore</span>
+                    </a>
+                   
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-history' ></i>
+                        <span class="txt1">History</span>
+                    </a>
+                   
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-cog'></i>
+                        <span class="txt1">Settings</span>
+                    </a>
+                   
+                </li>
+
+            </ul>
+            <div class="Profile">
+                <div class="profile-content">
+                    <div class="Content">
+                        <div class="name">Shivakshi Singh</div>
+                    <div class="design">Web Developer</div>
+                    </div>
+                    <div class="logout">
+                        <i class='bx bxs-log-out' ></i>
+
+                    </div>
+                   
+                </div>
+                
+            </div>
+
+           
+
+           
+
+
+</div>
+
+
+            
+        </div>
+        <div class="menu">
+            <a href="#" id="btn23">
+                <i class='bx bx-menu'></i>
+            </a>
+        </div>
+        <script>
+            let down=document.querySelectorAll("#down");
+            for( var i=0 ;i< down.length;i++){
+                down[i].addEventListener("click",(e)=>{
+                    
+                    let arrowParent=e.target.parentElement.parentElement.parentElement;
+                    console.log(arrowParent);
+                    arrowParent.classList.toggle("showMenu");
+                }); 
+            }
+
+            let btn=document.querySelector("btn23");
+            let sidebar=document.querySelector(".sidebar");
+            btn23.onclick=function(){
+                sidebar.classList.toggle("active");
+
+            }
+
+        </script>
+
+    </body>
